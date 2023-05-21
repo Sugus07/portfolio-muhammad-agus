@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply m-auto;
+}
+
+body {
+    font-family : inter, sans-serif;
+}
+
+.sosial-media{
+    @apply w-[35px] h-[35px] rounded-full flex justify-center items-center border-2 hover:text-white hover:bg-primary hover:border-primary;
+}
+.sosial-media-2{
+    @apply w-[35px] h-[35px] rounded-full flex justify-center items-center border-2 hover:text-primary bg-white hover:border-primary;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] bg-dark block my-2;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.fixed-nav {
+    @apply w-full fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-md;
+    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+}
